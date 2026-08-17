@@ -4,6 +4,8 @@
     margin: 0;
 
 }
+
+
 :root {
   --primary: #72aec8;
   --dark: #212529;
@@ -12,6 +14,103 @@
   --white: #ffffff;
   --gray: #6c757d;
 }
+
+/* start nav styling */
+.nav_right ul{
+    list-style:none;
+}
+
+.navbar{
+    position:fixed;
+    width:100%;
+    background-color:#cfd4d8;
+    z-index: 3000;
+}
+
+.nav_right{
+    margin-right:50px;
+}
+
+.nav-item{
+    color:#717171;
+}
+
+.nav-item a{
+    transition:all 0.5s;
+}
+
+.nav-item a:hover{
+    color:#C8E7FA;
+
+}
+
+.search_icon{
+    transition:all 0.5s;
+}
+
+.search_icon:hover{
+    color:#C8E7FA;
+    cursor:pointer;
+}
+
+/* end nav styling */
+
+
+/* the home section styling */
+.home{
+    background-color:#EDF1F3;
+}
+
+.carousel-item{
+    position:relative;
+    margin-left:750px;
+    width:50%;
+    height:900px;
+}
+
+.home_title{
+    position:absolute;
+    transform:translate(-125%, -190%);
+    /* transform:translateX(50%); */
+    text-transform:uppercase;
+    font-size: calc(1.575rem + 3.9vw);
+    line-height: 1.2;  
+    color: #212529;
+}
+
+.btn_title{
+    position:absolute;
+    transform:translate(-250%, -450%);
+    border:none;
+    background-color:#212529;
+    height:50px;
+    width:250px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* carsoul */
+
+.carousel-control-next-icon , .carousel-control-prev-icon{
+    width:50px;
+    height:50px;
+    transform:scale(3);
+    color:#212529;
+    transition:all 0.4s;
+
+}
+
+.carousel-control-next-icon:hover , .carousel-control-prev-icon:hover{
+    opacity:0.5;
+    filter: invert(53%) sepia(93%) saturate(3000%) hue-rotate(170deg);
+}
+
+
+/* end of home section styling */
+
+
+/* start company -services styling */
 .company-services{
    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     align-items: center;
@@ -33,6 +132,10 @@
     font-size: 0.9rem;
     line-height: 1.5rem;
 }
+
+/* end company -services styling */
+
+ /* start sale styling */
 .sale
 {
     background-color: var(--light); 
@@ -77,6 +180,87 @@
     text-transform: uppercase;
     font-weight: 600;
 }
+
+/* end of sale section styling */
+
+
+/* start of blog section styling */
+
+.blog{
+  margin-top:100px;
+}
+
+/* blog title styling */
+.blog_title{
+    display:flex;
+    justify-content:space-between
+}
+
+.blog_title h2{
+    margin-left:140px;
+
+}
+
+.blog_title a{
+    margin-right:130px;
+    text-decoration: none; 
+    font-size: 1.1em; 
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+    color: #000
+    
+}
+
+.blog_title a:hover{
+    text-decoration:underline;
+}
+
+/* blog cards styling */
+
+.blog_cards{
+    margin-left:140px;
+    display:flex;
+    gap:20px;
+}
+
+.card{
+    border:none;
+    width:350px;
+}
+
+.card img{
+    border-radius:10px;
+}
+
+.card-body{
+    margin-left:3px;
+
+}
+
+.card-body h5{
+    font-size: 15px;
+    text-transform: uppercase !important;
+    color: #6c757d;
+}
+
+.card-body a{
+    text-decoration: none; 
+    font-size: 20px; 
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+    color: #000;
+    transition:all 0.5s;
+}
+
+.card-body a:hover{
+    color: blue;
+    cursor:pointer;
+}
+
+/* end of blog section styling */
+
+
+/* start of social section styling */
 .insta-card img
 {
     width: 100%;
@@ -108,6 +292,10 @@
     top: 50%; /* Slides up to the center */
     opacity: 1;
 }
+
+/* end of social section styling */
+
+/* start of footer section styling */
 footer
 {
     color: var(--dark);
@@ -147,3 +335,5 @@ footer a{
 .payment p {
   margin: 0;
 }
+
+/* end of footer section styling */
