@@ -86,7 +86,7 @@
                                 </ul>
                             </li>
 
-                            <div class="nav_icons d-flex align-items-center">
+                            <div class="nav_icons d-flex align-items-center justify-content-end">
                                 <i class="fa-solid fa-magnifying-glass m-2 search_icon"></i>
                                 <i class="fa-solid fa-user my-2"></i>
                                 <i class="fa-solid fa-cart-shopping m-2"></i>
@@ -102,40 +102,48 @@
         <section class="home " id="home">
             <div id="carouselExample" class="carousel slide ">
                 <div class="carousel-inner">
-                    <div class="carousel-item active ">
-                        <img src="https://themewagon.github.io/MiniStore/images/banner-image.png" class="d-block w-100"
-                            alt="...">
-                        <h1 class="home_title">Technology<br>Hack You<br> Won't Get.</h1>
-                        <button class="btn_title">Shop Product</button>
+                    <div class="carousel-item active">
+                        <div class="item-content d-flex px-2">
+                            <div class="caption d-flex flex-column justify-content-center ">
+                                <h1 class="home_title col-lg-12 col-sm-6">Technology Hack You Won't Get.</h1>
+                                <button class="btn_title">Shop Product</button>
+                            </div>
+                            <img src="https://themewagon.github.io/MiniStore/images/banner-image.png"
+                                class="d-block w-100">
+
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="https://themewagon.github.io/MiniStore/images/banner-image.png" class="d-block w-100"
-                            alt="...">
-                        <h1 class="home_title">Technology<br>Hack You<br> Won't Get.</h1>
-                        <button class="btn_title">Shop Product</button>
+                    <div class="carousel-item active">
+                        <div class="item-content d-flex px-2">
+
+                            <div class="caption d-flex flex-column justify-content-center ">
+                                <h1 class="home_title col-lg-12 col-sm-6">Technology Hack You Won't Get.</h1>
+                                <button class="btn_title">Shop Product</button>
+                            </div>
+                            <img src="https://themewagon.github.io/MiniStore/images/banner-image.png"
+                                class="d-block w-100">
+
+                        </div>
+
                     </div>
-                    <div class="carousel-item">
-                        <img src="https://themewagon.github.io/MiniStore/images/banner-image.png" class="d-block w-100"
-                            alt="...">
-                        <h1 class="home_title">Technology<br>Hack You<br> Won't Get.</h1>
-                        <button class="btn_title">Shop Product</button>
-                    </div>
+
+
                 </div>
 
+                <div class="controls d-flex bg-black ">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
 
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-
-
+                </div>
             </div>
         </section>
 
@@ -258,126 +266,128 @@
         <!-- end blog section -->
 
         <!--- Social section --->
-       <section class="social py-5 container">
-    <div class="subscribe text-center mx-auto w-100" style="max-width: 700px;">
-        <div class="subcrble-content mb-3">
-            <h2 class="subscribe-title text-uppercase">Subscribe to our newsletter</h2>
-            <p class="subscribe-description">Get the latest news and updates right at your inbox.</p>
-        </div>
-        <form action="#" class="subscribe-form d-flex flex-column flex-lg-row gap-2 w-100">
-            <input type="email" placeholder="Enter your email" class="form-control rounded-0">
-            <button type="submit" class="btn submit-btn btn-dark rounded-0">Subscribe</button>
-        </form>
-    </div>
-</section>
+        <section class="social py-5 container">
+            <div class="subscribe text-center mx-auto w-100" style="max-width: 700px;">
+                <div class="subcrble-content mb-3">
+                    <h2 class="subscribe-title text-uppercase">Subscribe to our newsletter</h2>
+                    <p class="subscribe-description">Get the latest news and updates right at your inbox.</p>
+                </div>
+                <form action="#" class="subscribe-form d-flex flex-column flex-lg-row gap-2 w-100">
+                    <input type="email" placeholder="Enter your email" class="form-control rounded-0">
+                    <button type="submit" class="btn submit-btn btn-dark rounded-0">Subscribe</button>
+                </form>
+            </div>
+        </section>
 
-            <!--insta-shop section-->
-            <div class="insta-shop">
+        <!--insta-shop section-->
+        <div class="insta-shop">
 
-                <h2 class="insta-shop-title text-uppercase text-center pb-3">Shop our Insta</h2>
+            <h2 class="insta-shop-title text-uppercase text-center pb-3">Shop our Insta</h2>
 
-                <div class="insta-shop-images d-flex flex-wrap gap-2 justify-content-center">
+            <div class="insta-shop-images d-flex flex-wrap gap-2 justify-content-center">
+                <div class="insta-shop-images row g-2 justify-content-center">
                     <!--- Insta card 1 --->
-                    <div class="insta-card">
-                        <img src="images/insta-item1.jpg" alt="insta">
-                        <i class=" insta-icon fa-brands fa-instagram"></i>
+                    <div class="insta-card col-12 col-sm-6 col-md-4 col-lg position-relative">
+                        <img src="images/insta-item1.jpg" alt="insta" class="img-fluid">
+                        <i class="insta-icon fa-brands fa-instagram"></i>
                     </div>
                     <!--- Insta card 2 --->
-                    <div class="insta-card">
-                        <img src="images/insta-item2.jpg" alt="insta">
+                    <div class="insta-card col-12 col-sm-6 col-md-4 col-lg position-relative">
+                        <img src="images/insta-item2.jpg" alt="insta" class="img-fluid">
                         <i class="insta-icon fa-brands fa-instagram"></i>
                     </div>
                     <!--- Insta card 3 --->
-                    <div class="insta-card">
-                        <img src="images/insta-item3.jpg" alt="insta">
+                    <div class="insta-card col-12 col-sm-6 col-md-4 col-lg position-relative">
+                        <img src="images/insta-item3.jpg" alt="insta" class="img-fluid">
                         <i class="insta-icon fa-brands fa-instagram"></i>
                     </div>
                     <!--- Insta card 4 --->
-                    <div class="insta-card">
-                        <img src="images/insta-item4.jpg" alt="insta">
+                    <div class="insta-card col-12 col-sm-6 col-md-4 col-lg position-relative">
+                        <img src="images/insta-item4.jpg" alt="insta" class="img-fluid">
                         <i class="insta-icon fa-brands fa-instagram"></i>
                     </div>
                     <!--- Insta card 5 --->
-                    <div class="insta-card">
-                        <img src="images/insta-item5.jpg" alt="insta">
+                    <div class="insta-card col-12 col-sm-6 col-md-4 col-lg position-relative">
+                        <img src="images/insta-item5.jpg" alt="insta" class="img-fluid">
                         <i class="insta-icon fa-brands fa-instagram"></i>
                     </div>
                 </div>
-        </section>
+                </section>
 
-        <!--- Footer section --->
-        <footer class="footer ">
-            <!--- First footer section --->
-            <div class="first-footer-section container d-flex justify-content-between flex-wrap">
-                <!--- Brand section --->
-                <div class="brand-section col-lg-2 col-md-5 col-sm-11">
-                    <img src="images/main-logo.png" alt="logo" class="footer-logo">
-                    <p class="brand-disc">Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa
-                        volutpat aenean odio erat nullam fringilla.</p>
-                    <div class="social d-flex gap-3">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                <!--- Footer section --->
+                <footer class="footer ">
+                    <!--- First footer section --->
+                    <div class="first-footer-section container d-flex justify-content-between flex-wrap">
+                        <!--- Brand section --->
+                        <div class="brand-section col-lg-2 col-md-5 col-sm-11">
+                            <img src="images/main-logo.png" alt="logo" class="footer-logo">
+                            <p class="brand-disc">Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit.
+                                Gravida massa
+                                volutpat aenean odio erat nullam fringilla.</p>
+                            <div class="social d-flex gap-3">
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <!--- Quick links section --->
+                        <div class="quick-links col-lg-2 col-md-5 col-sm-11">
+                            <h3 class="quick-links-title">Quick Links</h3>
+                            <ul class="quick-links-list list-unstyled d-flex flex-column gap-2">
+                                <li><a href="#" class="text-decoration-none text-uppercase">Home</a></li>
+                                <li><a href="#" class="text-decoration-none text-uppercase">About</a></li>
+                                <li><a href="#" class="text-decoration-none text-uppercase">Shop</a></li>
+                                <li><a href="#" class="text-decoration-none text-uppercase">Blog</a></li>
+                                <li><a href="#" class="text-decoration-none text-uppercase  ">Contact</a></li>
+                            </ul>
+                        </div>
+                        <!--- Help & Information section --->
+                        <div class="help-info col-lg-2 col-md-5 col-sm-11">
+                            <h3 class="help-info-title">Help & Information</h3>
+                            <ul class="help-info-list list-unstyled d-flex flex-column gap-2">
+                                <li><a href="#" class="text-decoration-none text-uppercase">Track Your Order</a></li>
+                                <li><a href="#" class="text-decoration-none text-uppercase">Returns Policies</a></li>
+                                <li><a href="#" class="text-decoration-none text-uppercase">Shipping + Delivery</a></li>
+                                <li><a href="#" class="text-decoration-none text-uppercase">Contact Us</a></li>
+                                <li><a href="#" class="text-decoration-none text-uppercase">FAQs</a></li>
+                            </ul>
+                        </div>
+                        <!--- Contact us section --->
+                        <div class="contact-us col-lg-2 col-md-5 col-sm-11">
+                            <h3 class="contact-us-title">Contact Us</h3>
+                            <p>Do you have any queries or suggestions?<a href="mailto:yourinfo@gmail.com"
+                                    class="text-decoration-none"> yourinfo@gmail.com</a></p>
+                            <p>If you need support? Just give us a call. <a href="tel:+5511122233344"
+                                    class="text-decoration-none">+55 111 222 333 44</a></p>
+                        </div>
                     </div>
-                </div>
-                <!--- Quick links section --->
-                <div class="quick-links col-lg-2 col-md-5 col-sm-11">
-                    <h3 class="quick-links-title">Quick Links</h3>
-                    <ul class="quick-links-list list-unstyled d-flex flex-column gap-2">
-                        <li><a href="#" class="text-decoration-none text-uppercase">Home</a></li>
-                        <li><a href="#" class="text-decoration-none text-uppercase">About</a></li>
-                        <li><a href="#" class="text-decoration-none text-uppercase">Shop</a></li>
-                        <li><a href="#" class="text-decoration-none text-uppercase">Blog</a></li>
-                        <li><a href="#" class="text-decoration-none text-uppercase  ">Contact</a></li>
-                    </ul>
-                </div>
-                <!--- Help & Information section --->
-                <div class="help-info col-lg-2 col-md-5 col-sm-11">
-                    <h3 class="help-info-title">Help & Information</h3>
-                    <ul class="help-info-list list-unstyled d-flex flex-column gap-2">
-                        <li><a href="#" class="text-decoration-none text-uppercase">Track Your Order</a></li>
-                        <li><a href="#" class="text-decoration-none text-uppercase">Returns Policies</a></li>
-                        <li><a href="#" class="text-decoration-none text-uppercase">Shipping + Delivery</a></li>
-                        <li><a href="#" class="text-decoration-none text-uppercase">Contact Us</a></li>
-                        <li><a href="#" class="text-decoration-none text-uppercase">FAQs</a></li>
-                    </ul>
-                </div>
-                <!--- Contact us section --->
-                <div class="contact-us col-lg-2 col-md-5 col-sm-11">
-                    <h3 class="contact-us-title">Contact Us</h3>
-                    <p>Do you have any queries or suggestions?<a href="mailto:yourinfo@gmail.com"
-                            class="text-decoration-none"> yourinfo@gmail.com</a></p>
-                    <p>If you need support? Just give us a call. <a href="tel:+5511122233344"
-                            class="text-decoration-none">+55 111 222 333 44</a></p>
-                </div>
-            </div>
-            <hr class="w-100">
+                    <hr class="w-100">
 
-            <!--- Second footer section --->
-            <div class="second-footer container d-flex justify-content-between flex-wrap">
-                <!--- Shippment section --->
-                <div class="shippment d-flex col-lg-3 col-md-5 col-sm-11">
-                    <p>We ship with:</p>
-                    <img src="images/dhl.png" alt="shippment">
-                    <img src="images/shippingcard.png" alt="shippment">
-                </div>
-                <!--- Payment section --->
-                <div class="payment d-flex col-lg-3 col-md-5 col-sm-11  ">
-                    <p>Payment options:</p>
-                    <img src="images/visa.jpg" alt="payment">
-                    <img src="images/mastercard.jpg" alt="payment">
-                    <img src="images/paypal.jpg" alt="payment">
-                </div>
-                <!--- Copyrights section --->
-                <div class="copyrights d-flex col-lg-4 col-md-5 col-sm-11">
-                    &copy; Copyright 2023 MiniStore. Design by TemplatesJungle Distribution by ThemeWagon
-                </div>
-            </div>
-        </footer>
+                    <!--- Second footer section --->
+                    <div class="second-footer container d-flex justify-content-between flex-wrap">
+                        <!--- Shippment section --->
+                        <div class="shippment d-flex col-lg-3 col-md-5 col-sm-11">
+                            <p>We ship with:</p>
+                            <img src="images/dhl.png" alt="shippment">
+                            <img src="images/shippingcard.png" alt="shippment">
+                        </div>
+                        <!--- Payment section --->
+                        <div class="payment d-flex col-lg-3 col-md-5 col-sm-11  ">
+                            <p>Payment options:</p>
+                            <img src="images/visa.jpg" alt="payment">
+                            <img src="images/mastercard.jpg" alt="payment">
+                            <img src="images/paypal.jpg" alt="payment">
+                        </div>
+                        <!--- Copyrights section --->
+                        <div class="copyrights d-flex col-lg-4 col-md-5 col-sm-11">
+                            &copy; Copyright 2023 MiniStore. Design by TemplatesJungle Distribution by ThemeWagon
+                        </div>
+                    </div>
+                </footer>
 
-        <script src="bootstrap.bundle.min.js"></script>
+                <script src="bootstrap.bundle.min.js"></script>
     </body>
 
 </html>

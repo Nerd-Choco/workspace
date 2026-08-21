@@ -61,26 +61,48 @@
     background-color:#EDF1F3;
 }
 
-.carousel-item{
-    position:relative;
-    margin-left:750px;
-    width:50%;
-    height:900px;
+
+@media screen and (max-width: 1023px) {
+    .caption {
+        position: absolute !important; 
+        background-color: #bbc0c5a1 !important;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+.carousel-control-prev,
+.carousel-control-next {
+    top: auto;
+    bottom: 20px;
+    width: 12px;
+    height: 12px;
+
+}
+
+.home_title
+{
+    width: 50%;
+   font-size: 1.575rem !important;
+
+}
+
+.carousel-control-prev {
+    left: 45%;
+}
+
+.carousel-control-next {
+    right: 45%;
+}
 }
 
 .home_title{
-    position:absolute;
-    transform:translate(-125%, -190%);
-    /* transform:translateX(50%); */
     text-transform:uppercase;
-    font-size: calc(1.575rem + 3.9vw);
+    font-size: 4rem;
     line-height: 1.2;  
     color: #212529;
 }
 
 .btn_title{
-    position:absolute;
-    transform:translate(-250%, -450%);
     border:none;
     background-color:#212529;
     height:50px;
@@ -251,11 +273,7 @@
     height: 100%;
     object-fit: cover;
 }
-.insta-card
-{
-    width: 19%;
-    position: relative;
-}
+
 .insta-icon {
   position: absolute;
   top: 70%; /* Starts hidden below the card */
