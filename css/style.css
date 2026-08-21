@@ -15,6 +15,7 @@
   --gray: #6c757d;
 }
 
+
 /* start nav styling */
 .nav_right ul{
     list-style:none;
@@ -190,25 +191,13 @@
   margin-top:100px;
 }
 
-/* blog title styling */
-.blog_title{
-    display:flex;
-    justify-content:space-between
-}
 
-.blog_title h2{
-    margin-left:140px;
-
-}
 
 .blog_title a{
-    margin-right:130px;
     text-decoration: none; 
     font-size: 1.1em; 
     letter-spacing: 2px;
-    text-transform: uppercase; 
     color: #000
-    
 }
 
 .blog_title a:hover{
@@ -217,16 +206,6 @@
 
 /* blog cards styling */
 
-.blog_cards{
-    margin-left:140px;
-    display:flex;
-    gap:20px;
-}
-
-.card{
-    border:none;
-    width:350px;
-}
 
 .card img{
     border-radius:10px;
