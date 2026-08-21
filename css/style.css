@@ -190,16 +190,6 @@
   margin-top:100px;
 }
 
-/* blog title styling */
-.blog_title{
-    display:flex;
-    justify-content:space-between
-}
-
-.blog_title h2{
-    margin-left:140px;
-
-}
 
 .blog_title a{
     margin-right:130px;
@@ -217,15 +207,9 @@
 
 /* blog cards styling */
 
-.blog_cards{
-    margin-left:140px;
-    display:flex;
-    gap:20px;
-}
 
 .card{
     border:none;
-    width:350px;
 }
 
 .card img{
